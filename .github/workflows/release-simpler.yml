@@ -71,6 +71,7 @@ jobs:
             - name: Release
               uses: softprops/action-gh-release@v1
               with:
+                  tag_name: ${{ needs.bump-version.outputs.new_version }}
                   files: |
                       wpmovies-plugin.zip
                       wpmovies-theme.zip
