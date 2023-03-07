@@ -77,7 +77,7 @@ jobs:
             - name: Upload theme ZIP
               uses: actions/upload-artifact@v3
               with:
-                  name: wpmovies-thene
+                  name: wpmovies-theme
                   path: ./wpmovies-theme.zip
     create-release:
         needs: [bump-version, build]
