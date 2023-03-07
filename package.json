@@ -13,7 +13,9 @@
 		"format:php": "wp-env run composer run-script format",
 		"lint:php": "wp-env run composer run-script lint",
 		"plugin-zip": "wp-scripts plugin-zip",
-		"wp-env": "wp-env"
+		"wp-env": "wp-env",
+		"build-plugin": "node .github/scripts/build-plugin.js",
+		"build-theme": "node .github/scripts/build-theme.js"
 	},
 	"prettier": {
 		"useTabs": true,
